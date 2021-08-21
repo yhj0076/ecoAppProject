@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/HowToTrash"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="48dp"
+        android:text="배출 방법\n검색"
+        app:layout_constraintBottom_toTopOf="@+id/QnA"
+        app:layout_constraintEnd_toStartOf="@+id/locateTrashTip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/locateTrashTip"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="48dp"
+        android:text="지역별\n배출요령"
+        app:layout_constraintBottom_toTopOf="@+id/MyAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HowToTrash"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/QnA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="57dp"
+        android:text="Q&A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/MyAccount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HowToTrash" />
+
+    <Button
+        android:id="@+id/MyAccount"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="57dp"
+        android:text="내 정보"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/QnA"
+        app:layout_constraintTop_toBottomOf="@+id/locateTrashTip" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
